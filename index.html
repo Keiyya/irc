@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <title>Interactive Rating Component</title>
+</head>
+<body class="h-screen bg-veryDarkBlue flex items-center justify-center margin-auto">
+  
+  <main  id="card-one" class="card w-96 bg-darkBlue text-white shadow-xl">
+    <div class="card-body">
+      <img src="images/icon-star.svg" class="w-9 bg-bgBlue rounded-full p-2 mb-3" alt="">
+      <h2 class="card-title text-3xl">How did we do?</h2>
+      <p class="text-whiteCol">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering</p>
+      <div id="stats" class="flex flex-row items-center justify-evenly my-6">
+        <div id="1" class="btnRating bg-gray-700 hover:bg-orange mx-3  flex items-center justify-center h-9 w-9 text-center rounded-full">1</div>
+        <div id="2" class="btnRating bg-gray-700 hover:bg-orange mx-3  flex items-center justify-center h-9 w-9 text-center rounded-full">2</div>
+        <div id="3" class="btnRating bg-gray-700 hover:bg-orange mx-3  flex items-center justify-center h-9 w-9 text-center rounded-full">3</div>
+        <div id="4" class="btnRating bg-gray-700 hover:bg-orange mx-3  flex items-center justify-center h-9 w-9 text-center rounded-full">4</div>
+        <div id="5" class="btnRating bg-gray-700 hover:bg-orange mx-3  flex items-center justify-center h-9 w-9 text-center rounded-full">5</div>
+      </div>
+      <div class="btn bg-orange text-white rounded-full hover:bg-white hover:text-orange">submit</div>
+    </div>
+  </main>
+
+  <main id="card-two" class="card hidden  w-96 bg-darkBlue text-white shadow-xl">
+    <figure class="mt-7">
+      <img src="images/illustration-thank-you.svg" alt="">
+    </figure>
+    <div class="card-body text-center">
+      <p class="text-orange bg-gray-700 rounded-full">You selected <span id="selected">0</span> out of 5</p>
+      <h2 class="text-3xl">Thank you!</h2>
+      <p class="text-whiteCol">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
